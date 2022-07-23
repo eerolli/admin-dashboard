@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "navigation header"
+    "navigation main"
+    "navigation main"
+    "navigation main"
+    ;
+}
+
+.header{
+    display: grid;
+    grid-area: header;
+    background-color: #E7E5DF;
+}
+
+.navigation {
+    display: grid;
+    grid-area: navigation;
+    background-color: #53917E;
+}
+
+.main{
+    display: grid;
+    grid-area: main;
+}
