@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: GoldLeaf;
+    src: url("./fonts/GoldleafBoldPersonalUseBold.ttf");
+}
+
 .wrapper{
     min-height: 100vh;
     display: grid;
@@ -18,16 +23,44 @@
 .header{
     display: grid;
     grid-area: header;
-    background-color: #E7E5DF;
 }
 
 .navigation {
     display: grid;
     grid-area: navigation;
-    background-color: #53917E;
+    background-color: #1768AC;
+    color: white;
+    grid-template-rows: 1fr 4fr;
+}
+
+.logo{
+    margin-left: 1.5rem;
+    align-self: center;
+    display: flex;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-left: 1.5rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    gap: 10px;
 }
 
 .main{
     display: grid;
     grid-area: main;
+    background-color: #E7E5DF;
+}
+
+li {
+    list-style: none;
 }
